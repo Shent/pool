@@ -118,6 +118,7 @@ function debuglog($string, $level=2)
 	}
 
 	$now = now();
+	var_dump(sprintf("LOGS ARE HERE: %s", YAAMP_LOGS));
 	if(!is_dir(YAAMP_LOGS)) mkdir(YAAMP_LOGS);
 	error_log("[$now] $string\n", 3, YAAMP_LOGS."/debug.log");
 }
