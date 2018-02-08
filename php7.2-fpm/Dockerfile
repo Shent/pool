@@ -13,8 +13,9 @@ RUN "date"
 
 # Type docker-php-ext-install to see available extensions
 RUN docker-php-ext-install pdo pdo_mysql
-RUN apt-get install php-memcached
+RUN apt-get install php7-memcached
 RUN apt-get install memcached
+RUN service memcached start
 
 # install xdebug
 RUN pecl install xdebug
