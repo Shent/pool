@@ -2,7 +2,7 @@
 
 ini_set('date.timezone', 'UTC');
 
-define('YAAMP_LOGS', '/var/log/nginx/');
+define('YAAMP_LOGS', './logs/');
 define('YAAMP_HTDOCS', '/var/www/web');
 define('YAAMP_BIN', '/var/bin');
 
