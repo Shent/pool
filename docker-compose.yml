@@ -16,7 +16,7 @@ services:
             args:
                 TIMEZONE: ${TIMEZONE}
         volumes:
-            - ${APP_PATH}:/var/www/yaamp
+            - ${APP_PATH}:/var/www/web
     nginx:
         build: nginx
         ports:
