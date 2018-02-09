@@ -116,7 +116,7 @@ function debuglog($string, $level=2)
 		mydumperror($string, $level);
 		return;
 	}
-
+	phpinfo();
 	$now = now();
 	if(!is_dir(YAAMP_LOGS)) mkdir(YAAMP_LOGS);
 	error_log("[$now] $string\n", 3, YAAMP_LOGS."/debug.log");
