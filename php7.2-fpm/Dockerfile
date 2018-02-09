@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     git \
     unzip \
     libpq-dev \
+    zlib1g-dev \
     libmemcached-dev \
     curl
 
