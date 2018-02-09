@@ -1,38 +1,6 @@
 version: '2'
 
 services:
-  memcached:
-    image: memcached:1.4
-
-  data:
-    image: busybox
-    volumes:
-      - ./misc/data:/var/lib/mysql
-
-  mysql:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-    ports:
-      - "13306:3306"
-    volumes_from:
-      - data
-    volumes:
-      - ../application/initial.sql:/docker-entrypoint-initdb.d/initial.sql
-    container_name: mysql
-    # db:
-    #     image: mariadb
-    #     volumes:
-    #         - "./.data/db:/var/lib/mysql"
-    #     environment:
-    #         MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-    #         MYSQL_DATABASE: ${MYSQL_DATABASE}
-    #         MYSQL_USER: ${MYSQL_USER}
-    #         MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-
   php:
     build:
       context: php7.2-fpm
@@ -40,6 +8,10 @@ services:
         TIMEZONE: ${TIMEZONE}
     volumes:
       - ${APP_PATH}:/var/www/web
+    networks:
+      shent:
+        ipv4_address: 172.16.238.2
+        ipv6_address: 2001:3984:3989::2
     container_name: php
 
   nginx:
@@ -49,5 +21,24 @@ services:
     volumes_from:
       - php
     volumes:
-        - ./logs/nginx/:/var/log/nginx
+      - ./logs/nginx/:/var/log/nginx
+    depends_on:
+      - php
     container_name: nginx
+    networks:
+      shent:
+        ipv4_address: 172.16.238.1
+        ipv6_address: 2001:3984:3989::1
+
+networks:
+  shent:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.16.238.0/24
+        gateway: 172.16.238.1
+      - subnet: 2001:3984:3989::/64
+        gateway: 2001:3984:3989::1

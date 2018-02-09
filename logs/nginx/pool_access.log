@@ -342,3 +342,5 @@
 92.232.71.12 - - [08/Feb/2018:23:21:17 +0000] "GET /favicon.ico HTTP/1.1" 200 30240 "http://shent.eu:8002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
 92.232.71.12 - - [08/Feb/2018:23:21:17 +0000] "GET / HTTP/1.1" 500 1126 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
 92.232.71.12 - - [08/Feb/2018:23:21:17 +0000] "GET /favicon.ico HTTP/1.1" 200 30240 "http://shent.eu:8002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+172.18.0.1 - - [09/Feb/2018:19:35:49 +0000] "GET / HTTP/1.1" 200 53131 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+172.18.0.1 - - [09/Feb/2018:19:35:50 +0000] "GET /favicon.ico HTTP/1.1" 200 30240 "http://localhost:8002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
