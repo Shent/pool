@@ -5,10 +5,8 @@ RUN apt-get update && apt-get install -y \
     openssl \
     git \
     unzip \
-    libpq-dev \
-    zlib1g-dev \
-    libmemcached-dev \
-    curl
+    curl \
+    nano
 
 # Set timezone
 RUN ln -snf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && echo ${TIMEZONE} > /etc/timezone
@@ -19,12 +17,10 @@ RUN "date"
 RUN docker-php-ext-install pdo pdo_mysql
 
 # Install Memcached for php 7
-RUN curl -L -o /tmp/memcached.tar.gz "https://github.com/php-memcached-dev/php-memcached/archive/php7.tar.gz" \
-    && mkdir -p /usr/src/php/ext/memcached \
-    && tar -C /usr/src/php/ext/memcached -zxvf /tmp/memcached.tar.gz --strip 1 \
-    && docker-php-ext-configure memcached \
-    && docker-php-ext-install memcached \
-    && rm /tmp/memcached.tar.gz
+RUN apt-get update \
+  && apt-get install -y libmemcached-dev zlib1g-dev \
+  && pecl install memcached-3.0.3 \
+  && docker-php-ext-enable memcached opcache
 
 # install xdebug
 RUN pecl install xdebug
