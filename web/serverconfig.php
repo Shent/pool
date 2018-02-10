@@ -6,7 +6,7 @@ define('YAAMP_LOGS', './logs');
 define('YAAMP_HTDOCS', '/var/www/html/application/pool/web');
 define('YAAMP_BIN', '/var/bin');
 
-define('YAAMP_DBHOST', '0.0.0.0');
+define('YAAMP_DBHOST', 'localhost');
 define('YAAMP_DBNAME', 'yaamp');
 define('YAAMP_DBUSER', 'root');
 define('YAAMP_DBPASSWORD', 'password');
