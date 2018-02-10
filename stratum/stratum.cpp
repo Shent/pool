@@ -217,10 +217,10 @@ int main(int argc, char **argv)
 	strcpy(g_tcp_server, iniparser_getstring(ini, "TCP:server", NULL));
 	strcpy(g_tcp_password, iniparser_getstring(ini, "TCP:password", NULL));
 
-	strcpy(g_sql_host, iniparser_getstring(ini, "SQL:host", '0.0.0.0'));
-	strcpy(g_sql_database, iniparser_getstring(ini, "SQL:database", 'mysql_database'));
-	strcpy(g_sql_username, iniparser_getstring(ini, "SQL:username", 'ivan'));
-	strcpy(g_sql_password, iniparser_getstring(ini, "SQL:password", 'nqma'));
+	strcpy(g_sql_host, iniparser_getstring(ini, "SQL:host", 0.0.0.0));
+	strcpy(g_sql_database, iniparser_getstring(ini, "SQL:database", "mysql_database"));
+	strcpy(g_sql_username, iniparser_getstring(ini, "SQL:username", NULL));
+	strcpy(g_sql_password, iniparser_getstring(ini, "SQL:password", NULL));
 	g_sql_port = iniparser_getint(ini, "SQL:port", 3306);
 
 	// optional coin filters (to mine only one on a special port or a test instance)
