@@ -4,7 +4,7 @@
 // do not change them here... set them in your serverconfig.php
 
 if (!defined('YAAMP_PRODUCTION')) define('YAAMP_PRODUCTION', false);
-if (!defined('YAAMP_USE_NGINX')) define('YAAMP_USE_NGINX', false);
+if (!defined('YAAMP_USE_NGINX')) define('YAAMP_USE_NGINX', true);
 
 if (!defined('YAAMP_DBHOST')) define('YAAMP_DBHOST', 'mysql');
 if (!defined('YAAMP_DBNAME')) define('YAAMP_DBNAME', 'mysql_database');

@@ -17,10 +17,11 @@ try
 
 catch(CException $e)
 {
+	echo "<pre>";
+		print_r($e);
+	echo "</pre>";
 	debuglog($e, 5);
 
 // 	$message = $e->getMessage();
 // 	send_email_alert('backend', "backend error", "$message");
 }
-
-
