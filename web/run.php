@@ -10,6 +10,10 @@ require_once('yaamp/include.php');
 
 $app = Yii::createWebApplication('yaamp/config.php');
 
+echo "<pre>";
+	print_r($app);
+echo "</pre>";
+
 try
 {
 	$app->runController($argv[1]);
@@ -17,9 +21,6 @@ try
 
 catch(CException $e)
 {
-	echo "<pre>";
-		print_r($e);
-	echo "</pre>";
 	debuglog($e, 5);
 
 // 	$message = $e->getMessage();
