@@ -9,7 +9,7 @@ if (!defined('YAAMP_USE_NGINX')) define('YAAMP_USE_NGINX', false);
 if (!defined('YAAMP_DBHOST')) define('YAAMP_DBHOST', 'localhost');
 if (!defined('YAAMP_DBNAME')) define('YAAMP_DBNAME', 'yaamp');
 if (!defined('YAAMP_DBUSER')) define('YAAMP_DBUSER', 'root');
-if (!defined('YAAMP_DBPASSWORD')) define('YAAMP_DBPASSWORD', '');
+if (!defined('YAAMP_DBPASSWORD')) define('password', '');
 
 if (!defined('YIIMP_PUBLIC_EXPLORER')) define('YIIMP_PUBLIC_EXPLORER', true);
 if (!defined('YIIMP_PUBLIC_BENCHMARK')) define('YIIMP_PUBLIC_BENCHMARK', false);
@@ -68,4 +68,3 @@ if (!defined('NICEHASH_DEPOSIT_AMOUNT')) define('NICEHASH_DEPOSIT_AMOUNT','0.01'
 
 // cli stuff
 if (!defined('YIIMP_CLI_ALLOW_TXS')) define('YIIMP_CLI_ALLOW_TXS', false);
-
