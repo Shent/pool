@@ -7,12 +7,8 @@ require_once('yaamp/defaultconfig.php');
 
 require_once('framework/yii.php');
 require_once('yaamp/include.php');
-
+die("HARD");
 $app = Yii::createWebApplication('yaamp/config.php');
-
-echo "<pre>";
-	print_r($app);
-echo "</pre>";
 
 try
 {
