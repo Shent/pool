@@ -1,9 +1,5 @@
 <?php
 
-echo sprintf("HOST: %s", $_ENV['DATABASE_HOST']);
-echo sprintf("USER: %s", $_ENV['DATABASE_USER']);
-echo sprintf("PASS: %s", $_ENV['DATABASE_PASSWORD']);
-
 $mysql = new mysqli($_ENV['DATABASE_HOST'], $_ENV['DATABASE_USER'],
 	$_ENV['DATABASE_PASSWORD'], $_ENV['DATABASE_NAME']);
 if (!$mysql) {
@@ -11,10 +7,7 @@ if (!$mysql) {
 	echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
 	exit;
 }
-
-
-
-//define('YII_DEBUG', true);
+define('YII_DEBUG', true);
 
 require_once('serverconfig.php');
 require_once('yaamp/defaultconfig.php');
