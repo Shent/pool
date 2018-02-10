@@ -16,7 +16,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <pthread.h>
-#include <mysql.h>
+#include <mysql/mysql.h>
 #include <errmsg.h>
 #include <ifaddrs.h>
 
@@ -185,4 +185,3 @@ void sha256_double_hash_hex(const char *input, char *output, unsigned int len);
 #include "algos/veltor.h"
 #include "algos/velvet.h"
 #include "algos/argon2a.h"
-
