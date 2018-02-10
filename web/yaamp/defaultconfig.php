@@ -57,9 +57,9 @@ if (!defined('YAAMP_ADMIN_WEBCONSOLE')) define('YAAMP_ADMIN_WEBCONSOLE', true);
 
 if (!defined('YAAMP_NOTIFY_NEW_COINS')) define('YAAMP_NOTIFY_NEW_COINS', true);
 
-if (!defined('YAAMP_LIMIT_ESTIMATE')) define('YAAMP_LIMIT_ESTIMATE', false);
+if (!defined('YAAMP_LIMIT_ESTIMATE')) define('YAAMP_LIMIT_ESTIMATE', true);
 if (!defined('YAAMP_RENTAL')) define('YAAMP_RENTAL', false);
-if (!defined('YAAMP_USE_NICEHASH_API')) define('YAAMP_USE_NICEHASH_API', false);
+if (!defined('YAAMP_USE_NICEHASH_API')) define('YAAMP_USE_NICEHASH_API', true);
 
 if (!defined('NICEHASH_API_KEY')) define('NICEHASH_API_KEY','');
 if (!defined('NICEHASH_API_ID')) define('NICEHASH_API_ID','0000');

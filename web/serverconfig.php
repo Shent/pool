@@ -11,9 +11,9 @@ define('YAAMP_DBNAME', 'mysql_database');
 define('YAAMP_DBUSER', 'mysql_user');
 define('YAAMP_DBPASSWORD', 'mysql_pw');
 
-define('YAAMP_PRODUCTION', true);
+define('YAAMP_PRODUCTION', false);
 define('YAAMP_RENTAL', true);
-define('YAAMP_LIMIT_ESTIMATE', false);
+define('YAAMP_LIMIT_ESTIMATE', true);
 
 define('YAAMP_FEES_MINING', 0.5);
 define('YAAMP_FEES_EXCHANGE', 2);
@@ -25,9 +25,9 @@ define('YAAMP_PAYMENTS_MINI', 0.001);
 define('YAAMP_ALLOW_EXCHANGE', false);
 define('YIIMP_PUBLIC_EXPLORER', true);
 define('YIIMP_PUBLIC_BENCHMARK', false);
-define('YIIMP_FIAT_ALTERNATIVE', 'EUR'); // USD is main
+define('YIIMP_FIAT_ALTERNATIVE', 'USD'); // USD is main
 
-define('YAAMP_USE_NICEHASH_API', false);
+define('YAAMP_USE_NICEHASH_API', true);
 
 define('YAAMP_BTCADDRESS', '');
 define('YAAMP_SITE_URL', 'shent.eu');
@@ -39,7 +39,7 @@ define('YAAMP_ADMIN_WEBCONSOLE', true);
 define('YAAMP_NOTIFY_NEW_COINS', true);
 define('YAAMP_DEFAULT_ALGO', 'x11');
 
-define('YAAMP_USE_NGINX', false);
+define('YAAMP_USE_NGINX', true);
 
 // Exchange public keys (private keys are in a separate config file)
 define('EXCH_CRYPTOPIA_KEY', '');
