@@ -7,9 +7,9 @@ if (!defined('YAAMP_PRODUCTION')) define('YAAMP_PRODUCTION', false);
 if (!defined('YAAMP_USE_NGINX')) define('YAAMP_USE_NGINX', false);
 
 if (!defined('YAAMP_DBHOST')) define('YAAMP_DBHOST', '0.0.0.0');
-if (!defined('YAAMP_DBNAME')) define('YAAMP_DBNAME', 'yaamp');
-if (!defined('YAAMP_DBUSER')) define('YAAMP_DBUSER', 'root');
-if (!defined('YAAMP_DBPASSWORD')) define('password', 'password');
+if (!defined('YAAMP_DBNAME')) define('YAAMP_DBNAME', 'mysql_database');
+if (!defined('YAAMP_DBUSER')) define('YAAMP_DBUSER', 'mysql_user');
+if (!defined('YAAMP_DBPASSWORD')) define('password', 'mysql_pw');
 
 if (!defined('YIIMP_PUBLIC_EXPLORER')) define('YIIMP_PUBLIC_EXPLORER', true);
 if (!defined('YIIMP_PUBLIC_BENCHMARK')) define('YIIMP_PUBLIC_BENCHMARK', false);
