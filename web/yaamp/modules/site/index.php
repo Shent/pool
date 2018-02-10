@@ -28,7 +28,7 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600)." hours";
 <!--  -->
 
 <div class="main-left-box">
-<div class="main-left-title">YII MINING POOLS</div>
+<div class="main-left-title">Shent MINING POOLS</div>
 <div class="main-left-inner">
 
 <ul>
@@ -69,30 +69,9 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600)." hours";
 
 </ul>
 </div></div><br>
-
-<!--  -->
-
-<div class="main-left-box">
-<div class="main-left-title">LINKS</div>
-<div class="main-left-inner">
-
-<ul>
-<?php if (YIIMP_PUBLIC_BENCHMARK): ?>
-<li><b>Benchmarks</b> - <a href='/site/benchmarks'>http://<?= YAAMP_SITE_URL ?>/site/benchmarks</a></li>
-<?php endif; ?>
-
-<?php if (YAAMP_ALLOW_EXCHANGE): ?>
-<li><b>Algo Switching</b> - <a href='/site/multialgo'>http://<?= YAAMP_SITE_URL ?>/site/multialgo</a></li>
-<?php endif; ?>
-
+<div class="main-left-box"></div>
 <br>
-
-</ul>
-</div></div><br>
 </td><td valign=top>
-
-<!--  -->
-
 <div id='pool_current_results'>
 <br><br><br><br><br><br><br><br><br><br>
 </div>
