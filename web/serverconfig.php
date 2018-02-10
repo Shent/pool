@@ -6,10 +6,10 @@ define('YAAMP_LOGS', './logs');
 define('YAAMP_HTDOCS', '/var/www/html/application/pool/web');
 define('YAAMP_BIN', '/var/bin');
 
-define('YAAMP_DBHOST', '0.0.0.0');
+define('YAAMP_DBHOST', 'mysql');
 define('YAAMP_DBNAME', 'yaamp');
-define('YAAMP_DBUSER', 'root');
-define('YAAMP_DBPASSWORD', 'password');
+define('YAAMP_DBUSER', 'ivan');
+define('YAAMP_DBPASSWORD', 'nqma');
 
 define('YAAMP_PRODUCTION', true);
 define('YAAMP_RENTAL', true);
