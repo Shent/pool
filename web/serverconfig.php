@@ -9,7 +9,7 @@ define('YAAMP_BIN', '/var/bin');
 define('YAAMP_DBHOST', 'localhost');
 define('YAAMP_DBNAME', 'yaamp');
 define('YAAMP_DBUSER', 'root');
-define('YAAMP_DBPASSWORD', 'nqma');
+define('YAAMP_DBPASSWORD', 'password');
 
 define('YAAMP_PRODUCTION', true);
 define('YAAMP_RENTAL', true);
