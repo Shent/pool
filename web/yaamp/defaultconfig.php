@@ -6,7 +6,7 @@
 if (!defined('YAAMP_PRODUCTION')) define('YAAMP_PRODUCTION', false);
 if (!defined('YAAMP_USE_NGINX')) define('YAAMP_USE_NGINX', false);
 
-if (!defined('YAAMP_DBHOST')) define('YAAMP_DBHOST', 'localhost');
+if (!defined('YAAMP_DBHOST')) define('YAAMP_DBHOST', 'mysql');
 if (!defined('YAAMP_DBNAME')) define('YAAMP_DBNAME', 'yaamp');
 if (!defined('YAAMP_DBUSER')) define('YAAMP_DBUSER', 'root');
 if (!defined('YAAMP_DBPASSWORD')) define('password', '');
