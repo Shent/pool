@@ -25,7 +25,7 @@
 
 using namespace std;
 
-#include "iniparser/src/iniparser.h"
+#include "iniparser.h"
 
 #include "json.h"
 #include "util.h"
