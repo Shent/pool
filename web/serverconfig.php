@@ -7,9 +7,9 @@ define('YAAMP_HTDOCS', '/var/www/html/application/pool/web');
 define('YAAMP_BIN', '/var/bin');
 
 define('YAAMP_DBHOST', '0.0.0.0');
-define('YAAMP_DBNAME', 'mysql_database');
-define('YAAMP_DBUSER', 'mysql_user');
-define('YAAMP_DBPASSWORD', 'mysql_pw');
+define('YAAMP_DBNAME', 'yaamp');
+define('YAAMP_DBUSER', 'root');
+define('YAAMP_DBPASSWORD', 'password');
 
 define('YAAMP_PRODUCTION', true);
 define('YAAMP_RENTAL', true);
