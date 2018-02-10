@@ -32,9 +32,6 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600)." hours";
 <div class="main-left-inner">
 
 <ul>
-
-<li>YiiMP is a pool management solution based on the Yii Framework.</li>
-<li>This fork was based on the yaamp source code and is now an open source project.</li>
 <li>No registration is required, we do payouts in the currency you mine. Use your wallet address as the username.</li>
 <li>&nbsp;</li>
 <li>Payouts are made automatically every <?= $payout_freq ?> for all balances above <b><?= $min_payout ?></b>, or <b><?= $min_sunday ?></b> on Sunday.</li>
@@ -80,12 +77,6 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600)." hours";
 <div class="main-left-inner">
 
 <ul>
-
-<!--<li><b>BitcoinTalk</b> - <a href='https://bitcointalk.org/index.php?topic=508786.0' target=_blank >https://bitcointalk.org/index.php?topic=508786.0</a></li>-->
-<!--<li><b>IRC</b> - <a href='http://webchat.freenode.net/?channels=#yiimp' target=_blank >http://webchat.freenode.net/?channels=#yiimp</a></li>-->
-
-<li><b>API</b> - <a href='/site/api'>http://<?= YAAMP_SITE_URL ?>/site/api</a></li>
-<li><b>Difficulty</b> - <a href='/site/diff'>http://<?= YAAMP_SITE_URL ?>/site/diff</a></li>
 <?php if (YIIMP_PUBLIC_BENCHMARK): ?>
 <li><b>Benchmarks</b> - <a href='/site/benchmarks'>http://<?= YAAMP_SITE_URL ?>/site/benchmarks</a></li>
 <?php endif; ?>
@@ -98,12 +89,6 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600)." hours";
 
 </ul>
 </div></div><br>
-
-<!--  -->
-
-<a class="twitter-timeline" href="https://twitter.com/hashtag/YAAMP" data-widget-id="617405893039292417" data-chrome="transparent" height="450px" data-tweet-limit="3" data-aria-polite="polite">Tweets about #YAAMP</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
 </td><td valign=top>
 
 <!--  -->
@@ -163,4 +148,3 @@ function pool_history_refresh()
 }
 
 </script>
-
